@@ -44,12 +44,17 @@
     lblB.textColor = [UIColor blackColor];
     [self.view addSubview:lblB];
     
-    UILabel *lblResult = [[UILabel alloc] initWithFrame:CGRectMake(20, 360, 300, 200)];
+    UILabel *lblResult = [[UILabel alloc] initWithFrame:CGRectMake(20, 360, 300, 100)];
     lblResult.backgroundColor = [UIColor yellowColor];
     lblResult.text = strResult;
     lblResult.numberOfLines = 0;
     lblResult.textColor = [UIColor blackColor];
     [self.view addSubview:lblResult];
+    
+    
+    UIView *testView = [[UIView alloc] initWithFrame:CGRectMake(30, 460, 100, 50)];
+    testView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:testView];
 }
 
 #pragma mark - 封装一个截取字符串中同一个字符之间的字符串
